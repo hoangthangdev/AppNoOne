@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - AppNoOne</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/lib/Fontawesome/css/all.css" />
+</head>
+<body>
+    <section class="container">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light nav-top">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav form-inline my-2 my-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Login
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="/Account/Index">Đăng nhập</a>
+                                <a class="dropdown-item" href="/Account/RegisterAcount">Đăng Ký</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Giỏ Hàng (<span id="byCount">0</span>)</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="container">
+                <div class="row h-middle-top">
+                    <div class="col-sm d-flex align-items-center">
+                        <div class="d-flex">
+                            <div class="d-flex align-items-center item-call">
+                                <i class="fa-solid fa-phone-volume fa-2xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <div>Hotline : 01837576394</div>
+                                <div>Tổng đài : 19000000 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm d-flex align-items-md-center justify-content-center">
+                        <img loading="lazy" class="logo-image" src="~/image/images.png" alt="Vua Hàng Hiệu™ - Mua hàng hiệu chính hãng trực tuyến, Giá Tốt Nhất">
+                    </div>
+                    <div class="col-sm d-flex align-items-md-center justify-content-end">
+                        <form class="d-flex position-relative">
+                            <input ttype="text" class="input-search" placeholder="Tìm kiếm sản phẩm" />
+                            <button class="btn-search"><i class="fa-thin fa-magnifying-glass"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <nav id="site-navigation" class="navigation">
+                <div>
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Active</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+
+        <footer class="border-top footer text-muted">
+            <div class="container">
+                &copy; 2023 - AppNoOne - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            </div>
+        </footer>
+        <script src="~/lib/jquery/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/bootstrap.min.js"></script>
+        <script src="~/lib/Fontawesome/js/all.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        @RenderSection("Scripts", required: false)
+    </section>
+</body>
+</html>

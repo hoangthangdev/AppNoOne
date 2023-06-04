@@ -1,0 +1,10 @@
+E:\repos\AppNoOne\Models\bin\Debug\netcoreapp3.1\Models.deps.json
+E:\repos\AppNoOne\Models\bin\Debug\netcoreapp3.1\Models.dll
+E:\repos\AppNoOne\Models\bin\Debug\netcoreapp3.1\Models.pdb
+E:\repos\AppNoOne\Models\obj\Debug\netcoreapp3.1\Models.csproj.AssemblyReference.cache
+E:\repos\AppNoOne\Models\obj\Debug\netcoreapp3.1\Models.GeneratedMSBuildEditorConfig.editorconfig
+E:\repos\AppNoOne\Models\obj\Debug\netcoreapp3.1\Models.AssemblyInfoInputs.cache
+E:\repos\AppNoOne\Models\obj\Debug\netcoreapp3.1\Models.AssemblyInfo.cs
+E:\repos\AppNoOne\Models\obj\Debug\netcoreapp3.1\Models.csproj.CoreCompileInputs.cache
+E:\repos\AppNoOne\Models\obj\Debug\netcoreapp3.1\Models.dll
+E:\repos\AppNoOne\Models\obj\Debug\netcoreapp3.1\Models.pdb

@@ -1,0 +1,55 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using Models
+
+@{
+    ViewData["Title"] = "_LayoutManage";
+}
+<title>@ViewData["Title"] - AppNoOne</title>
+<link rel="stylesheet" href="~/lib/bootstrap/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/site.css" />
+<link rel="stylesheet" href="~/lib/Fontawesome/css/all.css" />
+
+@inject SignInManager<AppUsers> SignInManager
+@inject UserManager<AppUsers> UserManager
+
+<section class="container">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light nav-top">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    @if (SignInManager.IsSignedIn(User))
+                    {
+                        <li class="nav-item">
+                            <a id="manage" class="nav-link text-dark" asp-controller="Account" asp-action="UserInformation" title="Manage">Hello @UserManager.GetUserName(User)!</a>
+                        </li>
+                        <li class="nav-item">
+                            <form id="logoutForm" class="form-inline" asp-controller="Account" asp-action="Logout">
+                                <button id="logout" type="submit" class="nav-link btn btn-link text-dark">Đăng xuất</button>
+                            </form>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" id="register" asp-controller="Account" asp-action="RegisterAcount">Đăng ký</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" id="login" asp-controller="Account" asp-action="Index">Đăng nhập</a>
+                        </li>
+                    }
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    @RenderSection("Scripts", required: false)
+    <script src="~/lib/jquery/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/bootstrap.min.js"></script>
+    <script src="~/lib/Fontawesome/js/all.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</section>
+

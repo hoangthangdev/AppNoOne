@@ -1,0 +1,16 @@
+E:\repos\AppNoOne\DbContext\obj\Debug\netcoreapp3.1\IDbContext.csproj.AssemblyReference.cache
+E:\repos\AppNoOne\DbContext\obj\Debug\netcoreapp3.1\IDbContext.GeneratedMSBuildEditorConfig.editorconfig
+E:\repos\AppNoOne\DbContext\obj\Debug\netcoreapp3.1\IDbContext.AssemblyInfoInputs.cache
+E:\repos\AppNoOne\DbContext\obj\Debug\netcoreapp3.1\IDbContext.AssemblyInfo.cs
+E:\repos\AppNoOne\DbContext\obj\Debug\netcoreapp3.1\IDbContext.csproj.CoreCompileInputs.cache
+E:\repos\AppNoOne\DbContext\bin\Debug\netcoreapp3.1\IDbContext.deps.json
+E:\repos\AppNoOne\DbContext\bin\Debug\netcoreapp3.1\IDbContext.dll
+E:\repos\AppNoOne\DbContext\bin\Debug\netcoreapp3.1\IDbContext.pdb
+E:\repos\AppNoOne\DbContext\bin\Debug\netcoreapp3.1\Models.dll
+E:\repos\AppNoOne\DbContext\bin\Debug\netcoreapp3.1\Models.pdb
+E:\repos\AppNoOne\DbContext\obj\Debug\netcoreapp3.1\IDbContext.csproj.CopyComplete
+E:\repos\AppNoOne\DbContext\obj\Debug\netcoreapp3.1\IDbContext.dll
+E:\repos\AppNoOne\DbContext\obj\Debug\netcoreapp3.1\IDbContext.pdb
+E:\repos\AppNoOne\DbContext\bin\Debug\netcoreapp3.1\IDbContext.runtimeconfig.json
+E:\repos\AppNoOne\DbContext\bin\Debug\netcoreapp3.1\IDbContext.runtimeconfig.dev.json
+E:\repos\AppNoOne\DbContext\obj\Debug\netcoreapp3.1\IDbContext.genruntimeconfig.cache

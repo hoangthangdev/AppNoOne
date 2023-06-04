@@ -1,0 +1,10 @@
+E:\repos\AppNoOne\DTO\bin\Debug\netcoreapp3.1\DTO.deps.json
+E:\repos\AppNoOne\DTO\bin\Debug\netcoreapp3.1\DTO.dll
+E:\repos\AppNoOne\DTO\bin\Debug\netcoreapp3.1\DTO.pdb
+E:\repos\AppNoOne\DTO\obj\Debug\netcoreapp3.1\DTO.csproj.AssemblyReference.cache
+E:\repos\AppNoOne\DTO\obj\Debug\netcoreapp3.1\DTO.GeneratedMSBuildEditorConfig.editorconfig
+E:\repos\AppNoOne\DTO\obj\Debug\netcoreapp3.1\DTO.AssemblyInfoInputs.cache
+E:\repos\AppNoOne\DTO\obj\Debug\netcoreapp3.1\DTO.AssemblyInfo.cs
+E:\repos\AppNoOne\DTO\obj\Debug\netcoreapp3.1\DTO.csproj.CoreCompileInputs.cache
+E:\repos\AppNoOne\DTO\obj\Debug\netcoreapp3.1\DTO.dll
+E:\repos\AppNoOne\DTO\obj\Debug\netcoreapp3.1\DTO.pdb
