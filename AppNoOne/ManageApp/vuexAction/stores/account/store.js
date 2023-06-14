@@ -3,12 +3,16 @@ import { valueAlert } from '/ManageApp/components/constants'
 
 const accountStore = {
     state: () => ({
-        accountLogin: { name: 123 },
+        accountLogin: {},
+        allUsers: {}
     }),
     mutations: {
         setData(state, payload) {
             // `state` is the local module state
             state.accountLogin = payload;
+        },
+        dataUsers(state, payload) {
+            state.allUsers = payload;
         }
     },
     actions: {
@@ -22,11 +26,44 @@ const accountStore = {
                     // Xử lý lỗi nếu có
                     console.error(error);
                 });
+        },
+        getAllUser({ commit, state }, payload) {
+            console.log(payload)
+            axios.get('/api/Account/GetAllUsers', {
+                params:
+                {
+                    pageIndex: payload.pageIndex,
+                    pageSize: payload.pageSize
+                }
+            })
+            .then(response => {
+                console.log(response);
+                commit('dataUsers', response.data);
+            })
+            .catch(error => {
+                // Xử lý lỗi nếu có
+                console.error(error);
+            });
+        },
+        logOut() {
+            axios.get('/api/Account/Logout')
+                .then(response => {
+                    console.log(response);
+                    window.location.reload();
+                })
+                .catch(error => {
+                    // Xử lý lỗi nếu có
+                    console.error(error);
+                });
         }
+
     },
     getters: {
         CurrentUser(state) {
             return state.accountLogin;
+        },
+        AllUsers(state) {
+            return state.allUsers;
         }
     }
 }

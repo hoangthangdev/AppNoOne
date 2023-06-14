@@ -21,9 +21,11 @@ export const token = () => {
         while (cookie.charAt(0) === ' ') {
             cookie = cookie.substring(1);
         }
-        if (cookie.indexOf(name) === 0) {
-            return cookie.substring(name.length, cookie.length);
+        if (cookie.indexOf(tokenkey) === 0) {
+            return cookie.substring(tokenkey.length, cookie.length);
         }
     }
     return "";
 }
+
+export const tokenkey = reactive("_keytoken=");

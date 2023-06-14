@@ -438,3 +438,4 @@ E:\repos\AppNoOne\AppNoOne\obj\Debug\netcoreapp3.1\AppNoOne.pdb
 E:\repos\AppNoOne\AppNoOne\obj\Debug\netcoreapp3.1\AppNoOne.genruntimeconfig.cache
 E:\repos\AppNoOne\AppNoOne\bin\Debug\netcoreapp3.1\Assets\ckeditor\bender-runner.config.json
 E:\repos\AppNoOne\AppNoOne\bin\Debug\netcoreapp3.1\Assets\ckeditor\samples\toolbarconfigurator\font\config.json
+E:\repos\AppNoOne\AppNoOne\obj\Debug\netcoreapp3.1\Razor\Views\Error\Error.cshtml.g.cs

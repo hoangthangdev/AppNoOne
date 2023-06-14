@@ -5,7 +5,7 @@ import { overlay, token } from '/ManageApp/components/constants';
 const axiosInstance = axios.create({
     baseURL: 'https://localhost:5001', // Thiết lập baseURL
     headers: {
-        'Authorization': 'Bearer ' + token // Thiết lập headers
+        'Authorization': 'Bearer ' + token() // Thiết lập headers
     }
 });
 

@@ -22,6 +22,7 @@ using AppNoOne.ViewService.IviewService;
 using AppNoOne.ViewService;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Mvc.Filters;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace AppNoOne
 {
@@ -63,12 +64,8 @@ namespace AppNoOne
 
             var jwtSettings = jwtSection.Get<JwtSettings>();
             var key = Encoding.ASCII.GetBytes(jwtSettings.Secret);
-            services.AddAuthentication(x =>
-            {
-                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-            })
-            .AddJwtBearer(x =>
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+             .AddJwtBearer(x =>
             {
                 x.RequireHttpsMetadata = false;
                 x.SaveToken = true;
@@ -77,12 +74,11 @@ namespace AppNoOne
                     ValidateIssuerSigningKey = true,
                     IssuerSigningKey = new SymmetricSecurityKey(key),
                     ValidateIssuer = true,
-                    ValidateAudience = true,
                     ValidIssuer = jwtSettings.Issuer,
+                    ValidateAudience = true,
                     ValidAudience = jwtSettings.Audience,
                     ClockSkew = TimeSpan.Zero,
-                    ValidateLifetime = true,
-                    RequireExpirationTime = true,
+                    RequireExpirationTime = true
                 };
             });
             services.AddScoped<IJwtAuthenticationManager>(x => new JwtAuthenticationManager(jwtSettings));
@@ -106,12 +102,15 @@ namespace AppNoOne
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
+                app.UseExceptionHandler("/error");
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+
             app.UseStatusCodePagesWithReExecute("/error/{0}");
+
             app.UseHttpsRedirection();
+
             app.UseStaticFiles(new StaticFileOptions
             {
                 FileProvider = new PhysicalFileProvider(
@@ -125,16 +124,14 @@ namespace AppNoOne
                 Path.Combine(env.ContentRootPath, "Assets")),
                 RequestPath = "/Assets"
             });
-
             app.UseStaticFiles();
-
-            app.UseRouting();
-
             app.UseSession();
 
-            app.UseMiddleware<JwtMiddleware>();
+            app.UseMiddleware<EXMiddleware>();
 
             app.UseAuthentication();
+
+            app.UseRouting();
 
             app.UseAuthorization();
 
@@ -142,21 +139,27 @@ namespace AppNoOne
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "/{controller=Home}/{action=Index}/{id?}");
+
+                endpoints.MapControllerRoute(
+                    name: "error",
+                    pattern: "/error/{statusCode}",
+                    defaults: new { controller = "Error", action = "HandleError" });
+
+                endpoints.MapFallbackToController(
+                    action: "Index",
+                    controller: "Dashboard");
 
                 endpoints.MapControllerRoute(
                     name: "Api",
-                    pattern: "api/{controller=Dashboard}/{action=Index}/{id?}");
-
-                endpoints.MapControllerRoute(
-                    name: "SPA",
-                    pattern: "{*catchall}");
+                    pattern: "api/{controller=Account}/{action=Index}/{id?}");
             });
+
         }
 
         private void ConfigIdentityUser(IServiceCollection services)
         {
-
+            var jwtSection = Configuration.GetSection("JwtSettings").Get<JwtSettings>();
             services.AddIdentity<AppUsers, IdentityRole>()
                   .AddEntityFrameworkStores<AppDbContext>()
                   .AddDefaultTokenProviders();
@@ -190,12 +193,11 @@ namespace AppNoOne
             services.ConfigureApplicationCookie(options =>
             {
                 // options.Cookie.HttpOnly = true;
-                options.ExpireTimeSpan = TimeSpan.FromHours(8);
-                options.LoginPath = $"/api/Account/Index/";
+                options.ExpireTimeSpan = TimeSpan.FromHours(jwtSection.ExpireTime);
+                options.LoginPath = $"/api/Account/Index";
                 options.LogoutPath = $"/api/Account/singout/";
                 options.AccessDeniedPath = $"/Views/Shared/AccessDenied";
             });
-            //services.AddScoped<JwtMiddleware>();
             services.AddAuthorization(options =>
             {
                 options.AddPolicy("JwtAuth", policy => policy.RequireClaim("sub"));

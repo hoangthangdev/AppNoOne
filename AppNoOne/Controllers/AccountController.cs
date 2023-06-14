@@ -4,15 +4,15 @@ using AppNoOne.Models;
 using AppNoOne.TagHelper;
 using AppNoOne.ViewComponents;
 using AppNoOne.ViewService.IviewService;
-using DTO.OutDTO;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.WebUtilities;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using MimeKit;
 using Models;
-using System.Security.Claims;
+using System;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -212,6 +212,7 @@ namespace AppNoOne.Controllers
         }
 
         [Authorize]
+        [HttpGet]
         public async Task<IActionResult> Logout()
         {
             if (!_signInManager.IsSignedIn(User)) return RedirectToPage("/Index");
@@ -221,6 +222,23 @@ namespace AppNoOne.Controllers
             _logger.LogInformation("Người dùng đăng xuất");
 
             return View("Index");
+        }
+        
+        [Authorize]
+        [HttpGet]
+        public async Task<ResponseData> GetAllUsers(int pageIndex,int pageSize)
+        {
+            var rd = new ResponseData();
+            var totalUsers = await _userManager.Users.CountAsync();
+            // Tính toán tổng số trang
+            var totalPages = (int)Math.Ceiling(totalUsers / (double)pageSize);
+            var users = await _userManager.Users
+                .Skip((pageIndex - 1) * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
+            rd.Data = users;
+            rd.TotalPage = totalPages;
+            return rd;
         }
           
         [AllowAnonymous]
@@ -304,7 +322,7 @@ namespace AppNoOne.Controllers
             string username = HttpContext.User.Identity.Name;
             rd.Data = await _userViewService.GetUserByUserName(username);
             rd.Success = true;
-            return rd;
+            return rd; 
         }
     }
 }

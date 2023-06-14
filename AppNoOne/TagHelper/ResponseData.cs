@@ -8,6 +8,8 @@
         public object Data { get; set; }
         public int ErrorCode { get; set; }
         public string Token { get; set; }
+        public int PageIndex { get; set; }
+        public int TotalPage { get; set; }
 
         public ResponseData()
         {
@@ -17,6 +19,7 @@
             this.Data = null;
             this.ErrorCode = 0;
             this.Token = string.Empty;
+            this.TotalPage = 0;
         }
     }
 }
