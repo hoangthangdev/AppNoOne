@@ -1,5 +1,5 @@
 ﻿<template>
-    <breadcrum :items="dataBc"></breadcrum>
+    <breadcrum :items="dataBrc"></breadcrum>
      <h3 class="title">List User</h3>
     <v-table>
         <thead>
@@ -39,13 +39,10 @@
         },
         setup() {
             const store = useStore();
-            let dataPagi = reactive({
-                pageIndex: 1,
-                totalPage: 3
-            })
+            let dataPagi = reactive({})
             const pageSize = ref(10);
 
-            const dataBc = [
+            const dataBrc = [
                 {
                     title: 'Dashboard',
                     disabled: false,
@@ -69,25 +66,25 @@
                         pageSize: pageSize
                     }
                 ).then(() => {
-                    dataUsers.value
+                    dataUsers.value;
                 });
             }
 
             onBeforeMount(() => {
-                LoadDataUser(dataPagi.pageIndex, pageSize.value);
+                LoadDataUser(1, pageSize.value);
             })
             const ReloadDataUser = (changePage) => {
                 LoadDataUser(changePage, pageSize.value)
             }
             onMounted(() => {
-                watch(dataUsers, (newDataUsers) => {
+                watch(dataUsers.totalPage, (newDataUsers) => {
                     if (newDataUsers) {
-                        dataPagi = { ...dataPagi, totalPage: newDataUsers.totalPage };
+                        dataPagi = { pageIndex: 1, totalPage: newDataUsers.totalPage };
                     }
                 });
             })
             return {
-                dataBc,
+                dataBrc,
                 dataPagi,
                 ReloadDataUser,
                 dataUsers
