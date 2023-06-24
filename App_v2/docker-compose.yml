@@ -19,6 +19,3 @@ services:
       dockerfile: Dockerfile
     ports:
       - 8081:80 
-volumes:                                
-    mssqlvolum:        
-      name: sqlserver-xtlab-vl
