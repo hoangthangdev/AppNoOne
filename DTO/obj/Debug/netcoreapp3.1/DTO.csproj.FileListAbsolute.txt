@@ -8,3 +8,13 @@ E:\repos\AppNoOne\DTO\obj\Debug\netcoreapp3.1\DTO.AssemblyInfo.cs
 E:\repos\AppNoOne\DTO\obj\Debug\netcoreapp3.1\DTO.csproj.CoreCompileInputs.cache
 E:\repos\AppNoOne\DTO\obj\Debug\netcoreapp3.1\DTO.dll
 E:\repos\AppNoOne\DTO\obj\Debug\netcoreapp3.1\DTO.pdb
+C:\Users\thang\Source\Repos\AppNoOne\DTO\bin\Debug\netcoreapp3.1\DTO.deps.json
+C:\Users\thang\Source\Repos\AppNoOne\DTO\bin\Debug\netcoreapp3.1\DTO.dll
+C:\Users\thang\Source\Repos\AppNoOne\DTO\bin\Debug\netcoreapp3.1\DTO.pdb
+C:\Users\thang\Source\Repos\AppNoOne\DTO\obj\Debug\netcoreapp3.1\DTO.csproj.AssemblyReference.cache
+C:\Users\thang\Source\Repos\AppNoOne\DTO\obj\Debug\netcoreapp3.1\DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thang\Source\Repos\AppNoOne\DTO\obj\Debug\netcoreapp3.1\DTO.AssemblyInfoInputs.cache
+C:\Users\thang\Source\Repos\AppNoOne\DTO\obj\Debug\netcoreapp3.1\DTO.AssemblyInfo.cs
+C:\Users\thang\Source\Repos\AppNoOne\DTO\obj\Debug\netcoreapp3.1\DTO.csproj.CoreCompileInputs.cache
+C:\Users\thang\Source\Repos\AppNoOne\DTO\obj\Debug\netcoreapp3.1\DTO.dll
+C:\Users\thang\Source\Repos\AppNoOne\DTO\obj\Debug\netcoreapp3.1\DTO.pdb

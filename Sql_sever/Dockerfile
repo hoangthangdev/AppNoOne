@@ -1,10 +1,9 @@
 # Dockerfile for SQL Server image
-FROM microsoft/mssql-server2014
-ENV SA_PASSWORD=123
+FROM mcr.microsoft.com/mssql/server:2022-latest
+ENV SA_PASSWORD=sa12345!
 ENV ACCEPT_EULA=Y
 EXPOSE 1433
 
-CMD ["/opt/mssql/bin/sqlservr"]CMD ["/opt/mssql/bin/sqlservr"]
 
 
 

@@ -90,6 +90,8 @@ namespace AppNoOne
                 options.Cookie.IsEssential = true;
                 options.Cookie.Name = ".MyApplication";
             });
+            services.ConfigureSwagger();
+
             ConfigServiceDI(services);
         }
 
@@ -134,6 +136,8 @@ namespace AppNoOne
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseSwaggerWithUI();
 
             app.UseEndpoints(endpoints =>
             {

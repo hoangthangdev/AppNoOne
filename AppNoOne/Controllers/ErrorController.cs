@@ -8,6 +8,7 @@ namespace AppNoOne.Controllers
     {
         [HttpGet]
         [Route("error/{statusCode}")]
+        [ApiExplorerSettings(IgnoreApi = true)]
         public IActionResult HandleError(int? statusCode)
         {
             if (statusCode == (int)HttpStatusCode.Unauthorized)

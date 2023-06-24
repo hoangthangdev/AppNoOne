@@ -11,6 +11,7 @@ namespace AppNoOne.Controllers
     {
         [HttpGet]
         [Authorize]
+        [ApiExplorerSettings(IgnoreApi = true)]
         public ActionResult Index()
         {
             string filePath = Path.Combine(Directory.GetCurrentDirectory(), "dist/index.html");
