@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "fCsNbvhTJC2oEPRJcaZnsolbYo6GeeXAEvOMSWbQo1pdSxf8ycho/4wYf5KzUyr0qg0b0jharh+Zoz04aE3p6w==",
+  "dgSpecHash": "ioadR4mMZRYXQ9HqS3fLRsN47K9O4bmaB/qh5qp27sXymHe0Cgbw5IfZ1Nlejudy5gVm+sFCfeT/cY+rhNbhmg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\thang\\source\\repos\\AppNoOne\\SeachES\\SeachES.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\AppNoOne\\SeachES\\SeachES.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\TIEP-MSI\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\TIEP-MSI\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\TIEP-MSI\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512"
+  ],
   "logs": []
 }

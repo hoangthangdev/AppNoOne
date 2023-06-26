@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Zd7j7C1+xwq61nSEq40hLwZGulho3FsKtyoJE/izoHgr6VE+HV24xNIQdraeBzLASrvE3rJX9jq0AhtC38lZrg==",
+  "dgSpecHash": "fM1AKT0nTgLrEs6iqq5QR4kjbpWomyyABf+NYcSwxKKtHUQ3oeHeE+99dnc8VM0rkPdRdbnSIXl/Zx0UvXXk/A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\thang\\source\\repos\\AppNoOne\\DTO\\DTO.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\AppNoOne\\DTO\\DTO.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\TIEP-MSI\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\TIEP-MSI\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\TIEP-MSI\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512"
+  ],
   "logs": []
 }

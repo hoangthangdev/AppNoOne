@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
@@ -50,6 +50,7 @@
 
   <ItemGroup>
     <Folder Include="dist\" />
+    <Folder Include="wwwroot\lib\signalr\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -59,6 +60,20 @@
   <ItemGroup>
     <TypeScriptCompile Include="ManageApp\pages\home.vue" />
   </ItemGroup>
+  <PropertyGroup>
+    <CompileDependsOn>
+      $(CompileDependsOn);
+      WebpackBuild;
+    </CompileDependsOn>
+    <CopyAllFilesIntoSingleFolderForPackageDependsOn>
+      $(CopyAllFilesIntoSingleFolderForPackageDependsOn);
+      CollectWebpackOutput;
+    </CopyAllFilesIntoSingleFolderForPackageDependsOn>
+    <CopyAllFilesToSingleFolderFolderForMsDeployDependsOn>
+      $(CopyAllFilesToSingleFolderFolderForMsDeployDependsOn);
+      CollectWebpackOutput;
+    </CopyAllFilesToSingleFolderFolderForMsDeployDependsOn>
+  </PropertyGroup>
   <Target Name="WebpackBuild">
     <Message Condition="'$(Configuration)' != 'UnitTest'" Text="Running npm install" Importance="high" />
     <Exec Condition="'$(Configuration)' != 'UnitTest'" Command="npm install" WorkingDirectory="$(ProjectDir)" />

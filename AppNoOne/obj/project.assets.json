@@ -10777,19 +10777,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\thang\\.nuget\\packages\\": {}
+    "C:\\Users\\TIEP-MSI\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\thang\\source\\repos\\AppNoOne\\AppNoOne\\AppNoOne.csproj",
+      "projectUniqueName": "D:\\AppNoOne\\AppNoOne\\AppNoOne.csproj",
       "projectName": "AppNoOne",
-      "projectPath": "C:\\Users\\thang\\source\\repos\\AppNoOne\\AppNoOne\\AppNoOne.csproj",
-      "packagesPath": "C:\\Users\\thang\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\thang\\source\\repos\\AppNoOne\\AppNoOne\\obj\\",
+      "projectPath": "D:\\AppNoOne\\AppNoOne\\AppNoOne.csproj",
+      "packagesPath": "C:\\Users\\TIEP-MSI\\.nuget\\packages\\",
+      "outputPath": "D:\\AppNoOne\\AppNoOne\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\thang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\TIEP-MSI\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10804,8 +10804,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\thang\\source\\repos\\AppNoOne\\Services\\Services.csproj": {
-              "projectPath": "C:\\Users\\thang\\source\\repos\\AppNoOne\\Services\\Services.csproj"
+            "D:\\AppNoOne\\Services\\Services.csproj": {
+              "projectPath": "D:\\AppNoOne\\Services\\Services.csproj"
             }
           }
         }

@@ -1,3 +1,17 @@
 ﻿@{
     ViewData["Title"] = "Home";
 }
+
+<form id="from-chat">
+    <input name="message"/>
+    <button type="button" onclick="btnSend()">send</button>
+</form>
+
+@section Scripts{
+    <script>
+        function btnSend(){
+            let ms = $('input[name=message]').val();
+            sendMessage('123',ms);
+        }
+    </script>
+}

@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\thang\\.nuget\\packages\\": {}
+    "C:\\Users\\TIEP-MSI\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\thang\\source\\repos\\AppNoOne\\SeachES\\SeachES.csproj",
+      "projectUniqueName": "D:\\AppNoOne\\SeachES\\SeachES.csproj",
       "projectName": "SeachES",
-      "projectPath": "C:\\Users\\thang\\source\\repos\\AppNoOne\\SeachES\\SeachES.csproj",
-      "packagesPath": "C:\\Users\\thang\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\thang\\source\\repos\\AppNoOne\\SeachES\\obj\\",
+      "projectPath": "D:\\AppNoOne\\SeachES\\SeachES.csproj",
+      "packagesPath": "C:\\Users\\TIEP-MSI\\.nuget\\packages\\",
+      "outputPath": "D:\\AppNoOne\\SeachES\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\thang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\TIEP-MSI\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -56,6 +56,20 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.1.10, 3.1.10]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[3.1.0, 3.1.0]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[3.1.0, 3.1.0]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"

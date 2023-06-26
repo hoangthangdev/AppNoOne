@@ -6169,19 +6169,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\thang\\.nuget\\packages\\": {}
+    "C:\\Users\\TIEP-MSI\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\thang\\source\\repos\\AppNoOne\\Services\\Services.csproj",
+      "projectUniqueName": "D:\\AppNoOne\\Services\\Services.csproj",
       "projectName": "Services",
-      "projectPath": "C:\\Users\\thang\\source\\repos\\AppNoOne\\Services\\Services.csproj",
-      "packagesPath": "C:\\Users\\thang\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\thang\\source\\repos\\AppNoOne\\Services\\obj\\",
+      "projectPath": "D:\\AppNoOne\\Services\\Services.csproj",
+      "packagesPath": "C:\\Users\\TIEP-MSI\\.nuget\\packages\\",
+      "outputPath": "D:\\AppNoOne\\Services\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\thang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\TIEP-MSI\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6195,11 +6195,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\thang\\source\\repos\\AppNoOne\\DTO\\DTO.csproj": {
-              "projectPath": "C:\\Users\\thang\\source\\repos\\AppNoOne\\DTO\\DTO.csproj"
+            "D:\\AppNoOne\\DTO\\DTO.csproj": {
+              "projectPath": "D:\\AppNoOne\\DTO\\DTO.csproj"
             },
-            "C:\\Users\\thang\\source\\repos\\AppNoOne\\Models\\Models.csproj": {
-              "projectPath": "C:\\Users\\thang\\source\\repos\\AppNoOne\\Models\\Models.csproj"
+            "D:\\AppNoOne\\Models\\Models.csproj": {
+              "projectPath": "D:\\AppNoOne\\Models\\Models.csproj"
             }
           }
         }
@@ -6244,6 +6244,20 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.1.10, 3.1.10]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[3.1.0, 3.1.0]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[3.1.0, 3.1.0]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"

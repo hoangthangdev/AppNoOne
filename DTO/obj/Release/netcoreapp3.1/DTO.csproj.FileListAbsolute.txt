@@ -1,0 +1,10 @@
+D:\AppNoOne\DTO\bin\Release\netcoreapp3.1\DTO.deps.json
+D:\AppNoOne\DTO\bin\Release\netcoreapp3.1\DTO.dll
+D:\AppNoOne\DTO\bin\Release\netcoreapp3.1\DTO.pdb
+D:\AppNoOne\DTO\obj\Release\netcoreapp3.1\DTO.csproj.AssemblyReference.cache
+D:\AppNoOne\DTO\obj\Release\netcoreapp3.1\DTO.GeneratedMSBuildEditorConfig.editorconfig
+D:\AppNoOne\DTO\obj\Release\netcoreapp3.1\DTO.AssemblyInfoInputs.cache
+D:\AppNoOne\DTO\obj\Release\netcoreapp3.1\DTO.AssemblyInfo.cs
+D:\AppNoOne\DTO\obj\Release\netcoreapp3.1\DTO.csproj.CoreCompileInputs.cache
+D:\AppNoOne\DTO\obj\Release\netcoreapp3.1\DTO.dll
+D:\AppNoOne\DTO\obj\Release\netcoreapp3.1\DTO.pdb

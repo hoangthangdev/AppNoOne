@@ -157,6 +157,8 @@ namespace AppNoOne
                 endpoints.MapControllerRoute(
                     name: "Api",
                     pattern: "api/{controller=Account}/{action=Index}/{id?}");
+
+                endpoints.MapHub<chathup>("/chathup");
             });
 
         }
@@ -206,6 +208,7 @@ namespace AppNoOne
             {
                 options.AddPolicy("JwtAuth", policy => policy.RequireClaim("sub"));
             });
+            services.AddSignalR();
         }
 
         private void ConfigServiceDI(IServiceCollection services)

@@ -18,3 +18,13 @@ C:\Users\thang\Source\Repos\AppNoOne\Models\obj\Debug\netcoreapp3.1\Models.Assem
 C:\Users\thang\Source\Repos\AppNoOne\Models\obj\Debug\netcoreapp3.1\Models.csproj.CoreCompileInputs.cache
 C:\Users\thang\Source\Repos\AppNoOne\Models\obj\Debug\netcoreapp3.1\Models.dll
 C:\Users\thang\Source\Repos\AppNoOne\Models\obj\Debug\netcoreapp3.1\Models.pdb
+D:\AppNoOne\Models\bin\Debug\netcoreapp3.1\Models.deps.json
+D:\AppNoOne\Models\bin\Debug\netcoreapp3.1\Models.dll
+D:\AppNoOne\Models\bin\Debug\netcoreapp3.1\Models.pdb
+D:\AppNoOne\Models\obj\Debug\netcoreapp3.1\Models.csproj.AssemblyReference.cache
+D:\AppNoOne\Models\obj\Debug\netcoreapp3.1\Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\AppNoOne\Models\obj\Debug\netcoreapp3.1\Models.AssemblyInfoInputs.cache
+D:\AppNoOne\Models\obj\Debug\netcoreapp3.1\Models.AssemblyInfo.cs
+D:\AppNoOne\Models\obj\Debug\netcoreapp3.1\Models.csproj.CoreCompileInputs.cache
+D:\AppNoOne\Models\obj\Debug\netcoreapp3.1\Models.dll
+D:\AppNoOne\Models\obj\Debug\netcoreapp3.1\Models.pdb

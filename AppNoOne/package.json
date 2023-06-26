@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "@babel/plugin-transform-runtime": "^7.22.2",
+    "@microsoft/signalr": "^7.0.7",
     "axios": "^1.4.0",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
